@@ -1,9 +1,30 @@
+html {
+    font-size: 10px !important;
+}
+
 * {
+    font-family: "Inter";
     box-sizing: border-box;
+    color: #3F4B57 !important;
+}
+
+.main-container {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
+.sidebar {
+    padding: 2.4rem;
+    height: 100%;
+    width: 22.4rem;
+    max-width: 22.4rem;
+    background-color: #F7F9FC !important;
 }
 
 .navbar-home {
     background-color: #F7F9FC !important;
+    padding: 1.4rem 2.4rem !important;
 }
 
 .image-bg {
@@ -13,18 +34,47 @@
 
 .navbar-logo {
     background-color: #0973620A;
-    border-radius: 2px;
+    border-radius: 0.2rem;
+    padding: 0.4rem 1rem !important;
+    align-items: center !important;
+    gap: 0.8rem;
 }
 
 .nav-item {
-    width: 40px;
-    height: 40px;
     text-align: center;
+}
+
+.navbar-heading {
+    font-size: 1.3rem;
+    letter-spacing: 0.01rem;
+    margin: 0rem 0.4rem 0rem 0rem;
+    line-height: 2.2rem;
+    font-weight: 600;
+}
+
+.navbar-icons {
+    gap: 2.4rem !important;
+    align-items: center !important;
+}
+
+.nav-link img {
+    height: 2rem;
+    width: auto;
+}
+
+.nav-link {
+    font-size: 1.3rem;
+    font-weight: 600;
 }
 
 .profile-dropdown {
     background-color: #DBE2E9;
     border-radius: 50%;
+    height: 4rem;
+    width: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .notification {
