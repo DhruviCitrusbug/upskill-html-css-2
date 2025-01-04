@@ -16,8 +16,8 @@ html {
 }
 
 .sidebar {
-    height: 100%;
-    max-height: 100%;
+    height: 100vh;
+    max-height: 100vh;
     width: 22.4rem;
     max-width: 22.4rem;
     background-color: #F7F9FC !important;
@@ -31,7 +31,7 @@ html {
 }
 
 .sidebar-body {
-    padding: 0.8rem 2.4rem;
+    padding: 0.8rem 2.4rem 2.4rem 2.4rem;
     gap: 2.4rem;
 }
 
@@ -65,6 +65,44 @@ html {
 .sidebar-detail:active {
     background-color: #EFF3F6;
     border-radius: 0.6rem;
+}
+
+.collapse-btn {
+    margin-top: auto;
+}
+
+.sidebar.collapse {
+    width: 8rem;
+}
+
+.sidebar-header.collapse #voyage_control_text {
+    display: none;
+}
+
+.sidebar-header.collapse #voyage_control {
+    width: 6.6rem;
+    height: auto;
+}
+
+.sidebar-body.collapse {
+    padding: 0.8rem 1rem 2.4rem 1rem;
+}
+
+.sidebar-body.collapse li {
+    margin: auto;
+}
+
+.sidebar-body.collapse a {
+    width: auto;
+}
+
+.sidebar-body.collapse span {
+    display: none;
+}
+
+.collapse-btn.collapse {
+    margin: auto auto 0 auto;
+    rotate: 180deg;
 }
 
 .new-booking {

@@ -15,14 +15,14 @@
     </head>
     <body>
         <div class="main-container d-flex">
-            <div class="sidebar">
+            <div class="sidebar d-flex flex-column">
                 <div class="sidebar-header d-flex">
-                    <img src="/assets/images/voyage_control_logo.svg" class="logo">
-                    <img src="/assets/images/voyage_control.svg" class="sidebar-menu">
+                    <img src="/assets/images/voyage_control_logo.svg" id="voyage_control" alt="voyage_control">
+                    <img src="/assets/images/voyage_control.svg" id="voyage_control_text" alt="voyage_control">
                 </div>
-                <div class="sidebar-body d-flex flex-column">
+                <div class="sidebar-body flex-grow-1 d-flex flex-column">
                     <button class="d-flex align-items-center justify-content-center border-0 new-booking">
-                        <span><img src="/assets/images/actions_plus.svg" alt="plus-sign"></span>
+                        <img src="/assets/images/actions_plus.svg" alt="plus-sign">
                         <span>New Booking</span>
                     </button>
                     <ul class="nav sidebar-list">
@@ -34,7 +34,7 @@
                         </li>
                         <li>
                             <a class="d-flex align-items-center sidebar-detail" href="#">
-                                <span><img src="/assets/images/calendar.svg" alt="calendar.svg"></span>
+                                <img src="/assets/images/calendar.svg" alt="calendar.svg">
                                 <span>Calendar</span>
                             </a>
                         </li>
@@ -63,12 +63,10 @@
                             </a>
                         </li>
                     </ul>
-                    <div class="display-flex-end">
-                        <button class="d-flex align-items-center justify-content-center border-0">
-                            <img src="/assets/images/collapse.svg" alt="collapse">
-                            <span>Collapse</span>
-                        </button>
-                    </div>
+                    <a class="d-flex align-items-center display-flex-end sidebar-detail collapse-btn" id="collapse-btn" href="#">
+                        <img src="/assets/images/collapse.svg" alt="collapse">
+                        <span>Collapse</span>
+                    </a>
                 </div>
                 
             </div>
