@@ -237,10 +237,10 @@ html {
     margin: 0rem 2.4rem 2.4rem 2.4rem;
     box-shadow: 0px 8px 12px 0px #141F2B0A;
     border-radius: 0.6rem;
+    height: calc(100vh - 8.8rem);
 }
 
 .banner {
-    /* height: 25.6rem; */
     background-image: url(/assets/images/background.png);
     background-position: center;
     background-size: cover;
@@ -304,6 +304,7 @@ html {
 
 .site-contacts {
     padding: 2.4rem 2.4rem 0 2.4rem;
+    overflow: auto;
 }
 
 .site-contacts h2 {
@@ -317,14 +318,14 @@ html {
 
 .site-contacts-grid-main {
     margin-top: 0.9rem;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: repeat(2, 1fr);
     display: grid;
     grid-gap: 1.6rem;
 }
 
 .site-contacts-grid {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 1.6rem;
 }
 
