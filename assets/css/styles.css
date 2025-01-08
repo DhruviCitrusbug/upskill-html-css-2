@@ -10,15 +10,16 @@
     --Gray-Background: #DBE2E9;
     --Yellow-Background: #FFF8E9;
     --Yellow-Border: #FFEBBF;
+    --Hover-Color: #EFF3F6;
     --White: #ffffff;
   
     /* Variables */
-    --sidebar-navbar-background: var(--Blue-Background);
+    --Box-Shadow: 0px 8px 12px 0px #141F2B0A;;
   }
   
 
 html {
-    font-size: var(--Root-Font-Size) !important;
+    font-size: 10px !important;
 }
 
 * {
@@ -76,12 +77,12 @@ html {
 }
 
 .sidebar-detail:hover {
-    background-color: #EFF3F6;
+    background-color: var(--Hover-Color);
     border-radius: 0.6rem;
 }
 
 .sidebar-detail:active {
-    background-color: #EFF3F6;
+    background-color: var(--Hover-Color);
     border-radius: 0.6rem;
 }
 
@@ -137,6 +138,11 @@ html {
     font-weight: 600;
     line-height: 2.4rem;
     letter-spacing: 0.01rem;
+}
+
+.new-booking:hover {
+    opacity: 0.9;
+    border-radius: 0.6rem;
 }
 
 .navbar-home {
@@ -204,7 +210,7 @@ html {
     background-color: var(--White);
     border-radius: 0.8rem;
     gap: 0.4rem;
-    box-shadow: 0px 8px 12px 0px #141F2B0A;
+    box-shadow: var(--Box-Shadow);
 }
 
 .profile-popup-detail {
@@ -217,6 +223,12 @@ html {
     color: #576473;
     line-height: 2.2rem;
 }
+
+.profile-popup-detail:hover{
+    background-color: var(--Hover-Color);
+    border-radius: 0.6rem;
+}
+
 
 .profile-popup-detail img {
     height: 1.6rem;
@@ -236,13 +248,16 @@ html {
 
 .home-container {
     margin: 0rem 2.4rem 2.4rem 2.4rem;
-    box-shadow: 0px 8px 12px 0px #141F2B0A;
+    padding-bottom: 2.4rem;
+    box-shadow: var(--Box-Shadow);
     border-radius: 0.6rem;
     height: calc(100vh - 9.2rem);
 }
 
 .banner {
-    background-image: url(/assets/images/background.png);
+    background:
+        linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%) no-repeat,
+        url(/assets/images/background.png) no-repeat;
     background-position: center;
     background-size: cover;
     border-top-left-radius: 0.6rem;
@@ -298,7 +313,7 @@ html {
 }
 
 .home-container hr {
-    border: 1px solid #EFF3F6;
+    border: 1px solid var(--Hover-Color);
     opacity: 1;
     margin: 0;
 }
@@ -401,14 +416,6 @@ html {
         grid-template-columns: 1fr;
     }
 
-    /* .sidebar {
-        position: absolute;
-        z-index: 1;
-    }
-
-    .main-content {
-        margin-left: 80px !important;
-    } */
 }
 
 @media(max-width: 766px) {
@@ -420,4 +427,12 @@ html {
     .main-content {
         margin-left: 8rem !important;
     }
+}
+
+@media(max-width: 576px) {
+
+    html {
+        font-size: 8px !important;
+    }
+
 }
