@@ -98,6 +98,12 @@ html {
     height: 4.2rem;
 }
 
+#hamburger {
+    width: 4rem;
+    height: auto;
+    display: none;
+}
+
 .sidebar-header.collapse #voyage_control_text {
     display: none;
 }
@@ -149,6 +155,7 @@ html {
     color: #3F4B57;
     background-color: var(--Blue-Background) !important;
     padding: 1.4rem 2.4rem !important;
+    height: 68px;
 }
 
 .image-bg {
@@ -247,11 +254,11 @@ html {
 }
 
 .home-container {
-    margin: 0rem 2.4rem 2.4rem 2.4rem;
+    margin: 0.4rem 2.4rem 2.4rem 2.4rem;
     padding-bottom: 2.4rem;
     box-shadow: var(--Box-Shadow);
     border-radius: 0.6rem;
-    height: calc(100vh - 9.2rem);
+    height: calc(100vh - 9.6rem);
 }
 
 .banner {
@@ -300,7 +307,6 @@ html {
 
 .banner-detail {
     gap: 1.6rem;
-    min-width: 19rem;
 }
 
 .banner-detail p {
@@ -309,6 +315,7 @@ html {
     line-height: 2.4rem;
     letter-spacing: 0.01rem;
     color: #232D38 !important;
+    max-width: 16rem;
     margin: 0;
 }
 
@@ -433,6 +440,18 @@ html {
 
     html {
         font-size: 8px !important;
+    }
+
+    .sidebar {
+        display: none !important;
+        width: 0;
+        max-width: 0;
+    }
+
+    #hamburger {
+        display: block !important;
+        height: 4rem;
+        position: absolute;
     }
 
 }
