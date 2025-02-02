@@ -15,13 +15,22 @@
     </head>
     <body>
         <div class="main-container d-flex">
-            <img src="/assets/images/menu.png" id="hamburger" alt="menu">
-            <div class="sidebar d-flex flex-column">
+            <div class="sidebar d-flex flex-column" id="sidebar">
                 <div class="sidebar-header d-flex">
                     <img src="/assets/images/voyage_control_logo.svg" id="voyage_control" alt="voyage_control">
                     <img src="/assets/images/voyage_control.svg" id="voyage_control_text" alt="voyage_control">
                 </div>
                 <div class="sidebar-body flex-grow-1 d-flex flex-column">
+                    <div class="sidebar-hamburger">
+                        <img src="/assets/images/menu.png" id="sidebar-hamburger" alt="menu">
+                    </div>
+                    <div class="container p-0 mobile-dropdown" role="button">
+                        <div class="p-2 d-flex align-items-center mobile-dropdown navbar-logo">
+                            <span><img src="/assets/images/logo.svg" class="logo image-bg"></span>
+                            <h1 class="navbar-heading">Main Street Tower - USA</h1>
+                            <a class="pb-1" href="#"><img src="/assets/images/arrow_down.svg" alt="logo"></a>
+                        </div>
+                    </div>
                     <button class="d-flex align-items-center justify-content-center border-0 new-booking">
                         <img src="/assets/images/actions_plus.svg" alt="plus-sign">
                         <span>New Booking</span>
@@ -72,7 +81,15 @@
             </div>
             <div class="flex-grow-1 main-content">
                 <nav class="navbar navbar-expand navbar-home">
-                    <div class="container-fluid p-0">
+                    <div class="navbar-hamburger display-none">
+                        <img src="/assets/images/menu.png" class="me-4" id="navbar-hamburger" alt="menu">
+                    </div>
+                    <div class="sidebar-header mobile-logo d-flex">
+                        <img src="/assets/images/voyage_control_logo.svg" id="voyage_control" alt="voyage_control">
+                        <img src="/assets/images/voyage_control.svg" id="voyage_control_text" alt="voyage_control">
+                    </div>
+                    
+                    <div class="container-fluid p-0" role="button">
                         <div class="p-2 d-flex align-items-center navbar-logo">
                             <span><img src="/assets/images/logo.svg" class="logo image-bg"></span>
                             <h1 class="navbar-heading">Main Street Tower - USA</h1>
