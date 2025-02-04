@@ -476,6 +476,11 @@ html {
         margin-left: 8rem !important;
         transition: margin-left 0.2s ease-in-out;
     }
+
+    .site-contacts-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
 }
 
 @media(max-width: 576px) {
