@@ -99,7 +99,8 @@ html {
 }
 
 .sidebar.mobile {
-    width: 22.4rem;
+    width: 28rem;
+    max-width: 28rem;
     opacity: 1;
     height: 100vh;
     visibility: visible;
@@ -294,12 +295,16 @@ html {
     right: -0.7rem;
 }
 
+.main-content {
+    background-color: var(--Blue-Background) !important;
+}
+
 .home-container {
     margin: 0.4rem 2.4rem 2.4rem 2.4rem;
     padding-bottom: 2.4rem;
     box-shadow: var(--Box-Shadow);
     border-radius: 0.6rem;
-    height: calc(100vh - 9.6rem);
+    height: calc(100vh - 68px);
 }
 
 .banner {
@@ -542,6 +547,17 @@ html {
 
     .sidebar-header.collapse #voyage_control_text {
         display: block;
+    }
+
+    .banner-details-container {
+        margin: 1.6rem 2.4rem;
+        gap: 3rem;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .banner-detail {
+        width: auto;
     }
 
 }
