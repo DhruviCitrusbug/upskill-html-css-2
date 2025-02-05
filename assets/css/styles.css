@@ -59,8 +59,12 @@ html {
     gap: 1.6rem;
 }
 
+.sidebar-list li {
+    width: 100%;
+}
+
 .sidebar-detail {
-    width: 18.4rem;
+    width: 100%;
     gap: 1.6rem;
     font-size: 1.3rem;
     font-weight: 600;
@@ -80,7 +84,8 @@ html {
 .sidebar-detail:hover {
     background-color: var(--Hover-Color);
     border-radius: 0.6rem;
-    width: 18.4rem;
+    width: 100%;
+    padding-right: 4rem;
 }
 
 .sidebar-detail:active {
@@ -102,8 +107,8 @@ html {
 }
 
 .sidebar.mobile {
-    width: 28rem;
-    max-width: 28rem;
+    width: 30rem;
+    max-width: 30rem;
     opacity: 1;
     height: 100vh;
     visibility: visible;
@@ -215,12 +220,31 @@ html {
     gap: 0.8rem;
 }
 
+.dropdown-item {
+    padding: 1rem 2.8rem 1rem 2.6rem !important;
+    background-color: var(--White);
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.dropdown-menu[data-bs-popper] {
+    left: 8px;
+}
+
+.dropdown-menu .dropdown-item:hover,
+.dropdown-menu .dropdown-item:focus {
+  background-color: var(--Hover-Color);
+}
+
 .navbar-heading {
     font-size: 1.3rem;
     letter-spacing: 0.01rem;
     margin: 0rem 0.4rem 0rem 0rem;
     line-height: 2.2rem;
     font-weight: 600;
+    color: var(--Black-2);
 }
 
 .navbar-icons {
@@ -464,7 +488,8 @@ html {
     }
 
     .banner-detail {
-        width: 33%;
+        width: 33.33%;
+        max-width: fit-content;
     }
     
     .site-contacts-grid-main {
@@ -476,7 +501,25 @@ html {
     }
 
     .banner-detail {
-        gap: 1rem;
+        gap: 1.4rem;
+    }
+
+    .banner-detail p {
+        font-size: 1.5rem;
+    }
+
+    .banner-details-container {
+        justify-content: flex-start;
+        padding: 1.6rem 2rem;
+        gap: 4rem;
+    }
+
+}
+
+@media(max-width: 821px) {
+
+    .banner-detail {
+        min-width: fit-content;
     }
 
     .banner-detail p {
@@ -484,9 +527,8 @@ html {
     }
 
     .banner-details-container {
-        /* justify-content: space-between; */
-        padding: 1.6rem 2rem;
-        gap: 1.8rem;
+        justify-content: space-between;
+        gap: 1.6rem;
     }
 
 }
@@ -506,6 +548,24 @@ html {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
 
+}
+
+@media(max-width: 669px) {
+
+    .banner-details-container {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding: 1.6rem 2.4rem;
+    }
+
+    .banner-detail {
+        width: 45%;
+        max-width: none;
+    }
+
+    .site-contacts {
+        height: calc(100vh - 436px);
+    }
 }
 
 @media(max-width: 576px) {
@@ -555,6 +615,8 @@ html {
 
     .mobile-dropdown {
         display: flex !important;
+        width: 100%;
+        justify-content: center;
     }
 
     .mobile-dropdown span {
@@ -569,15 +631,15 @@ html {
         display: block;
     }
 
-    .banner-details-container {
-        padding: 1.6rem 2.4rem;
-        gap: 3rem;
-        flex-wrap: wrap;
-        justify-content: flex-start;
+    .site-contacts {
+        height: calc(100vh - 396px);
     }
 
-    .banner-detail {
-        width: auto;
+    .banner-details-container {
+        padding: 1.6rem 2.4rem;
+        gap: 1.4rem;
+        flex-wrap: wrap;
+        justify-content: flex-start;
     }
 
 }

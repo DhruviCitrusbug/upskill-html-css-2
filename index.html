@@ -17,8 +17,10 @@
         <div class="main-container d-flex">
             <div class="sidebar d-flex flex-column" id="sidebar">
                 <div class="sidebar-header d-flex">
-                    <img src="assets/images/voyage_control_logo.svg" id="voyage_control" alt="voyage_control">
-                    <img src="assets/images/voyage_control.svg" id="voyage_control_text" alt="voyage_control">
+                    <a href="#">
+                        <img src="assets/images/voyage_control_logo.svg" id="voyage_control" alt="voyage_control">
+                        <img src="assets/images/voyage_control.svg" id="voyage_control_text" alt="voyage_control">
+                    </a>
                 </div>
                 <div class="sidebar-body flex-grow-1 d-flex flex-column">
                     <div class="sidebar-hamburger">
@@ -84,18 +86,54 @@
                     <div class="navbar-hamburger display-none">
                         <img src="assets/images/menu.png" class="me-4" id="navbar-hamburger" alt="menu">
                     </div>
-                    <div class="sidebar-header mobile-logo d-flex">
-                        <img src="assets/images/voyage_control_logo.svg" id="voyage_control" alt="voyage_control">
-                        <img src="assets/images/voyage_control.svg" id="voyage_control_text" alt="voyage_control">
-                    </div>
-                    
-                    <div class="container-fluid p-0" role="button">
-                        <div class="p-2 d-flex align-items-center navbar-logo">
-                            <span><img src="assets/images/logo.svg" class="logo image-bg"></span>
-                            <h1 class="navbar-heading">Main Street Tower - USA</h1>
-                            <a class="pb-1" href="#"><img src="assets/images/arrow_down.svg" alt="logo"></a>
+                    <a href="#">
+                        <div class="sidebar-header mobile-logo d-flex">
+                            <img src="assets/images/voyage_control_logo.svg" id="voyage_control" alt="voyage_control">
+                            <img src="assets/images/voyage_control.svg" id="voyage_control_text" alt="voyage_control">
                         </div>
+                    </a>
+
+                    <div class="dropdown container-fluid">
+                        <a class="dropdown-toggle text-decoration-none" href="#" role="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                          <div class="container-fluid p-0">
+                            <div class="p-2 d-flex align-items-center navbar-logo">
+                              <span>
+                                <img src="assets/images/logo.svg" class="logo image-bg" alt="Logo">
+                              </span>
+                              <h1 class="navbar-heading">Main Street Tower - USA</h1>
+                              <img src="assets/images/arrow_down.svg" alt="Dropdown arrow" class="pb-1">
+                            </div>
+                          </div>
+                        </a>
+                        
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <li>
+                              <a class="dropdown-item d-flex align-items-center navbar-logo" href="#">
+                                <span>
+                                  <img src="assets/images/logo.svg" class="logo image-bg" alt="Logo" style="width: 20px; height: auto;">
+                                </span>
+                                <h1 class="navbar-heading">Main Street Tower - USA</h1>
+                              </a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item d-flex align-items-center navbar-logo" href="#">
+                                <span>
+                                  <img src="assets/images/logo.svg" class="logo image-bg" alt="Logo" style="width: 20px; height: auto;">
+                                </span>
+                                <h1 class="navbar-heading">Main Street Tower - USA</h1>
+                              </a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item d-flex align-items-center navbar-logo" href="#">
+                                <span>
+                                  <img src="assets/images/logo.svg" class="logo image-bg" alt="Logo" style="width: 20px; height: auto;">
+                                </span>
+                                <h1 class="navbar-heading">Main Street Tower - USA</h1>
+                              </a>
+                            </li>
+                        </ul>
                     </div>
+                      
                     <ul class="navbar-nav navbar-icons">
                         <li>
                             <a class="nav-link p-0" href="#"><img src="assets/images/question.svg" alt="information"></a>
