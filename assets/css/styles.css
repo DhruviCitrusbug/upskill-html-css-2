@@ -27,11 +27,12 @@ html {
 }
 
 .main-container {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: var(--Blue-Background) !important;
 }
 
 .sidebar {
@@ -46,7 +47,7 @@ html {
     margin: 1.4rem;
     gap: 0.47rem !important;
     align-items: center;
-    justify-content: center;
+    padding-left: 1.1rem;
 }
 
 .sidebar-body {
@@ -59,7 +60,7 @@ html {
 }
 
 .sidebar-detail {
-    width: 17.6rem;
+    width: 18.4rem;
     gap: 1.6rem;
     font-size: 1.3rem;
     font-weight: 600;
@@ -79,6 +80,7 @@ html {
 .sidebar-detail:hover {
     background-color: var(--Hover-Color);
     border-radius: 0.6rem;
+    width: 18.4rem;
 }
 
 .sidebar-detail:active {
@@ -96,6 +98,7 @@ html {
 
 .sidebar-header.collapse {
     height: 4.2rem;
+    padding-left: 0;
 }
 
 .sidebar.mobile {
@@ -195,7 +198,6 @@ html {
 
 .navbar-home {
     color: #3F4B57;
-    background-color: var(--Blue-Background) !important;
     padding: 1.4rem 2.4rem !important;
     height: 68px;
 }
@@ -295,16 +297,15 @@ html {
     right: -0.7rem;
 }
 
-.main-content {
-    background-color: var(--Blue-Background) !important;
+#home-container-wrapper {
+    background-color: var(--White);
+    margin: 0.4rem 2.4rem 2.4rem 2.4rem;
+    height: calc(100vh - 68px - 2.8rem);
 }
 
 .home-container {
-    margin: 0.4rem 2.4rem 2.4rem 2.4rem;
-    padding-bottom: 2.4rem;
     box-shadow: var(--Box-Shadow);
     border-radius: 0.6rem;
-    height: calc(100vh - 68px);
 }
 
 .banner {
@@ -347,7 +348,7 @@ html {
 }
 
 .banner-details-container {
-    margin: 1.6rem 2.4rem;
+    padding: 1.6rem 2.4rem;
     gap: 6.4rem;
 }
 
@@ -372,8 +373,9 @@ html {
 }
 
 .site-contacts {
-    padding: 2.4rem 2.4rem 0 2.4rem;
+    padding: 2.4rem 2.4rem 2.4rem 2.4rem;
     overflow: auto;
+    height: calc(100vh - 434px);
 }
 
 .site-contacts h2 {
@@ -386,7 +388,7 @@ html {
 }
 
 .site-contacts-grid-main {
-    margin-top: 0.9rem;
+    padding-top: 0.9rem;
     grid-template-columns: 6fr 4fr;
     display: grid;
     grid-gap: 1.6rem;
@@ -462,11 +464,29 @@ html {
     }
 
     .banner-detail {
-        width: 30%;
+        width: 33%;
     }
     
     .site-contacts-grid-main {
         grid-template-columns: 1fr;
+    }
+
+    .site-contacts {
+        height: calc(100vh - 398px);
+    }
+
+    .banner-detail {
+        gap: 1rem;
+    }
+
+    .banner-detail p {
+        font-size: 1.4rem;
+    }
+
+    .banner-details-container {
+        /* justify-content: space-between; */
+        padding: 1.6rem 2rem;
+        gap: 1.8rem;
     }
 
 }
@@ -550,7 +570,7 @@ html {
     }
 
     .banner-details-container {
-        margin: 1.6rem 2.4rem;
+        padding: 1.6rem 2.4rem;
         gap: 3rem;
         flex-wrap: wrap;
         justify-content: flex-start;
